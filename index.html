@@ -12,11 +12,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--El meta dato de viewport es para que se adapte a cualquier pantalla-->
     <meta name="author" content="Daniel Manzano">
-    <title>cine de manzano /title>
+    <title>Kitty Café </title>
     <!--El título como voy a aparecer en la web-->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <!--link rel enlaza con la carpeta y archivo del css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+   <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="#">
+        <img src="img/logo.jpeg" alt="Logo Cafetería" height="70" />
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="#comidas">Menu</a></li>
+          <li><a href="#cafes">Reservas</a></li>
+          <li><a href="#compraonlie">Contacto</a></li>
+          <li><a class="btn-shop" href="#shop">Shop</a></li>
+        </ul>
+      </nav>
+      <button id="menuToggle" class="menu-toggle">☰</button>
+    </div>
+  </header>
+
+   <!-- AQUÍ INICIA EL MAIN   -->
+  <main>
+    <!-- HERO con video, si NO QUIERO vídeo, pendiente cambiarlo -->
+   <!--- <section class="hero video-hero">
+      <video class="hero-video" id="heroVideo" autoplay loop playsinline>
+        <source src="img/Video_pies_con_cora.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+
+    Estos son los botones que estan dentro del vídeo-->
+
+      
+    </section> <!--Fin hero y cierra las estadísticas y todo-->
+
+      <!-- CARRUSEL DE IMÁGENES / LANZAMIENTOS / PRODUCTOS ETC -->
+    <section id="lanzamientos" class="carousel-section container">
+      <h2>Nuevos Lanzamientos</h2>
+
+      <div class="carousel" id="carousel">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="carousel-slide">
+            <img src="img/1.jpeg" alt="Reservaciones Lunes">
+            <p class="carousel-caption">Reservaciones Lune</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="img/2.jpeg" alt="Talleres">
+            <p class="carousel-caption">Talleres</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="img/3.jpeg" alt="Ubicaciones">
+            <p class="carousel-caption">Ubicaciones</p>
+          </div>
+        </div>
+
+        <!--estos son los botones que estan dentro del video-->
+        <div class="hero-content container">
+        <div class="hero-actions">
+          <a class="btn primary" href="https://forms.gle/9bGxM41iZmSR8NVj6">Nuestras sucursales</a>
+          <a class="btn outline" href="#voluntariado">A domicilio</a>
+        </div>
+
+      <!--Esta tarjeta es para colocar estadísticas y la clasde de stat es para colocar datos-->
+
+        <div class="stats-grid">
+          <div class="stat">
+            <div class="stat-number">+10 sucursales</div>
+            <div class="stat-label">Regístrate</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">+12.000 Suscriptores</div>
+            <div class="stat-label">Síguenos para actualizaciones diarias y promociones.</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">+20 Platillos</div>
+            <div class="stat-label">de la casa</div>
+          </div>
+        </div>
+      </div>
+
+        <button class="carousel-btn prev" id="carouselPrev" aria-label="Anterior">&#10094;</button>
+        <button class="carousel-btn next" id="carouselNext" aria-label="Siguiente">&#10095;</button>
+
+        <div class="carousel-dots" id="carouselDots"></div>
+      </div>
+    </section>
+
+    <!-- FIN CARRUSEL -->
+
+  <!--Aquí hay tres tarjetas para destacar proyectos, ventas, productos, servicios-->
+
+    <section id="proyectos" class="projects container">
+      <h2>Acerca de nosotros</h2>
+      <p class="lead">Llevamos café de calidad a diferentes regiones. Explora algunos de nuestros proyectos:</p>
+
+      <div class="project-cards">
+        <article class="card">
+          <div class="card-img" id="antioquia-caucasia"></div>
+          <div class="card-body">
+            <h3>Especialidad de la casa</h3>
+            <p>Chocolate de Kitty rosado.
+              Exótico
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-img" id="guajira"></div>
+          <div class="card-body">
+            <h3>Chocolate Artesanal</h3>
+            <p>Predominan el sabor natural del cacao.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-img" id="cordoba"></div>
+          <div class="card-body">
+            <h3>Talleres</h3>
+            <p> Sé el primero en enterarte de novedades, ventas, ofertas exclusivas y eventos especiales.</aside> 
+              Reserva tu lugar.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!--Aquí inicia el contacto y las noticias-->
+
+    <section id="contacto" class="newsletter">
+      <div class="container newsletter-inner">
+        <div>
+          <h2>¡No te pierdas lo último!</h2>
+          <p>Únete a nuestra lista de correos</p>
+        </div>
+        <form id="subscribeForm" class="subscribe-form" novalidate>
+          <input id="email" type="email" placeholder="Tu correo electrónico" required />
+          <button class="btn primary" type="submit">Suscribirme</button>
+        </form>
+        <div id="formMessage" class="form-message"></div>
+      </div>
+    </section>
+  </main>
+
+  <!--Aquí inicia el footer-->
+  <footer>
+
+  <div class="footer-social">
+    <div class="container social-icons">
+
+      <a href="https://www.facebook.com/share/1EQ6w21f9J/?mibextid=wwXIfr" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+
+      <a href="https://www.instagram.com/__manzanoo__?igsi=ZDhka21uNjhpbzlu&utm_source=qr" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+
+      <a href="https://www.youtube.com/" aria-label="YouTube">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+
+      <a href="www.linkedin.com/in/daniel-isaac-manzano-villavicencio-3b2616334" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+
+      <a href="https://x.com/manzanazos?s=11" aria-label="X (Twitter)">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      &copy; <span id="anio"></span> Kitty Café
+    </div>
+  </div>
+
+</footer>
+   
+</body>
 </html>
